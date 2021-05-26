@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'navbar.html' %}
+<div class="container center-align">
+    <h1>Home page</h1>
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card blue-grey lighten-1">
+            <div class="card-content white-text">
+              <img class="materialboxed responsive-img" src="https://media-exp1.licdn.com/dms/image/C4E03AQGP0bGpGAuZpw/profile-displayphoto-shrink_400_400/0/1607527581641?e=1626912000&v=beta&t=Cw0_LAtXbEIjDFhPz-LA_YuFSlkTfXUOzigEd64J5z0" alt="">
+              <span class="card-title">Santhosh Sudhaan</span>
+              <p>
+            </p>
+            </div>
+            <div class="card-action">
+              <a href="#">Github</a>
+              <a href="#">Linkedin</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m8">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">About me</span>
+                <p>I am a punctual and motivated individual who is able to work in a busy environment and produce high standards of work. I am an excellent team worker and am able to take instructions from all levels and build up good working relationships with all colleagues. I am flexible, reliable and possess excellent time keeping skills.
+
+              </p>
+              </div>
+              
+            </div>
+          </div>
+      </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+</script>
+{% endblock %}

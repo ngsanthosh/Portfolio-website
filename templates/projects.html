@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% include 'navbar.html' %}
+<h1 class="center-align">Projects</h1>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card blue-grey lighten-1">
+              <div class="card-content white-text">
+                <span class="card-title">My Favourite Projects</span>
+                <p>These are few of the projects I love and want to show off
+              </p>
+              </div>
+    
+            </div>
+          </div>
+        <ul class="collapsible col s12 m6">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>Google</div>
+              <div class="collapsible-body"><span>Google is a awesome search engine</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Youtube</div>
+              <div class="collapsible-body"><span>Youtube is a great video sharing platform</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Gmail</div>
+              <div class="collapsible-body"><span>You guyz know what it is!!</span></div>
+            </li>
+          </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+          });
+    </script>
+{% endblock %}
+
+
+
